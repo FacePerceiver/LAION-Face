@@ -1,0 +1,3 @@
+pyarrow
+img2dataset
+tqdm
