@@ -4,7 +4,7 @@ LAION-Face is the human face subset of [LAION-400M](https://laion.ai/laion-400-o
 
 LAION-Face is first used as the training set of [FaRL](https://github.com/FacePerceiver/FaRL), which is a powerful pre-training transformer backbones for face analysis tasks.
 
-*For now, we only provide the image id list of those contains human face, you need download the images by yourself following the following instructions. We will further provide the face detection metadata.*
+*For now, we only provide the image id list of those contains human face, you need download the images by yourself following the instructions below. We will further provide the face detection metadata.*
 
 ## Setup
 ```
