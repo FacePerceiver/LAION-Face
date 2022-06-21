@@ -4,7 +4,7 @@ LAION-Face is the human face subset of [LAION-400M](https://laion.ai/laion-400-o
 
 LAION-Face is first used as the training set of [FaRL](https://github.com/FacePerceiver/FaRL), which is a powerful pre-training transformer backbones for face analysis tasks.
 
-For now, we only provide the image id list of those contains human face, you need download the images by yourself following the following instructions. We will further provide the face detection metadata.
+*For now, we only provide the image id list of those contains human face, you need download the images by yourself following the following instructions. We will further provide the face detection metadata.*
 
 ## Setup
 ```
@@ -12,21 +12,24 @@ pip install -r requirements.txt
 ```
 We need `pyarrow` to read and write parque file, `img2dataset` to download images.
 
-### Download and sample the metadata
+### Download the metadata
 
-We provide the sample_id of face subset, please download `laion_face_ids.pth` and put it under the project root.
+We provide the list of sample_id in [huggingface](https://huggingface.co/datasets/FacePerceiver/laion-face/resolve/main/laion_face_ids.pth).
+
+Download the meta and convert with the following commands. 
 
 ```bash
 wget -l1 -r --no-parent https://the-eye.eu/public/AI/cah/laion400m-met-release/laion400m-meta/
 mv the-eye.eu/public/AI/cah/laion400m-met-release/laion400m-meta/ .
+wget https://huggingface.co/datasets/FacePerceiver/laion-face/resolve/main/laion_face_ids.pth
 python convert_parquet.py ./laion_face_ids.pth ./laion400m-meta ./laion_face_meta
 ```
 
 ### Download the images with img2dataset
-After conversion, you can start download the images.
+When metadata is ready, you can start download the images.
 
-```
-bash download.sh ./laion_face_data
+```bash
+bash download.sh ./laion_face_meta ./laion_face_data
 ```
 
 Please be patient, this command might run over days, and cost about 2T disk space, and it will download 50 million image-text pairs as 32 parts.
