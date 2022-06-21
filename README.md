@@ -45,11 +45,11 @@ checkout `download.sh` and [img2dataset](https://github.com/rom1504/img2dataset)
 
 
 ### License
-LAION-Face is the face subset of [LAION-400M](https://laion.ai/blog/laion-400-open-dataset), we distribute the image id list (the pth files) under the most open Creative Common CC-BY 4.0 license, which poses no particular restriction. The metadata of the dataset are from [LAION-400M](https://laion.ai/blog/laion-400-open-dataset). Please check [LAION-400M] for more details.
+LAION-Face is the face subset of [LAION-400M](https://laion.ai/blog/laion-400-open-dataset), we distribute the image id list (the pth files) under the most open Creative Common CC-BY 4.0 license, which poses no particular restriction. The metadata of the dataset are from [LAION-400M](https://laion.ai/blog/laion-400-open-dataset). Please check [LAION-400M](https://laion.ai/blog/laion-400-open-dataset) for more details.
 
 
 ### Contact 
-For help or issues concerning the data, feel free to submit a GitHub issue, or contact Yinglin Zheng (zhengyinglin@stu.xmu.edu.cn).
+For help or issues concerning the data, feel free to submit a GitHub issue, or contact [Yinglin Zheng](zhengyinglin@stu.xmu.edu.cn).
 
 ## Citation
 
