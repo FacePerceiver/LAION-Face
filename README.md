@@ -16,7 +16,7 @@ We need `pyarrow` to read and write parque file, `img2dataset` to download image
 
 We provide the list of sample_id in [huggingface](https://huggingface.co/datasets/FacePerceiver/laion-face/resolve/main/laion_face_ids.pth).
 
-Download the meta and convert with the following commands. 
+Download and convert the metadata with the following commands. 
 
 ```bash
 wget -l1 -r --no-parent https://the-eye.eu/public/AI/cah/laion400m-met-release/laion400m-meta/
@@ -49,7 +49,7 @@ LAION-Face is the face subset of [LAION-400M](https://laion.ai/blog/laion-400-op
 
 
 ### Contact 
-For help or issues concerning the data, feel free to submit a GitHub issue, or contact [Yinglin Zheng](zhengyinglin@stu.xmu.edu.cn).
+For help or issues concerning the data, feel free to submit a GitHub issue, or contact [Yinglin Zheng](mailto:zhengyinglin@stu.xmu.edu.cn).
 
 ## Citation
 
