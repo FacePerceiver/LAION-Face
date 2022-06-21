@@ -1,4 +1,4 @@
-## LAION-Face
+# LAION-Face
 
 LAION-Face is the human face subset of [LAION-400M](https://laion.ai/laion-400-open-dataset/), it consists of 50 million image-text pairs. Face detection is conducted to find images with faces. Apart from the 50 million full-set(LAION-Face 50M), we also provide a 20 million sub-set(LAION-Face 20M) for fast evaluation. 
 
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 We need `pyarrow` to read and write parque file, `img2dataset` to download images.
 
-### Download the metadata
+## Download the metadata
 
 We provide the list of sample_id in [huggingface](https://huggingface.co/datasets/FacePerceiver/laion-face/resolve/main/laion_face_ids.pth).
 
@@ -25,7 +25,7 @@ wget https://huggingface.co/datasets/FacePerceiver/laion-face/resolve/main/laion
 python convert_parquet.py ./laion_face_ids.pth ./laion400m-meta ./laion_face_meta
 ```
 
-### Download the images with img2dataset
+## Download the images with img2dataset
 When metadata is ready, you can start download the images.
 
 ```bash
@@ -44,11 +44,11 @@ checkout `download.sh` and [img2dataset](https://github.com/rom1504/img2dataset)
 
 
 
-### License
+## License
 LAION-Face is the face subset of [LAION-400M](https://laion.ai/blog/laion-400-open-dataset), we distribute the image id list (the pth files) under the most open Creative Common CC-BY 4.0 license, which poses no particular restriction. The metadata of the dataset are from [LAION-400M](https://laion.ai/blog/laion-400-open-dataset). Please check [LAION-400M](https://laion.ai/blog/laion-400-open-dataset) for more details.
 
 
-### Contact 
+## Contact 
 For help or issues concerning the data, feel free to submit a GitHub issue, or contact [Yinglin Zheng](mailto:zhengyinglin@stu.xmu.edu.cn).
 
 ## Citation
