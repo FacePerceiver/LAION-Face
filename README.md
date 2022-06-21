@@ -1,5 +1,7 @@
 # LAION-Face
+![](example.png)
 
+## Introduction
 LAION-Face is the human face subset of [LAION-400M](https://laion.ai/laion-400-open-dataset/), it consists of 50 million image-text pairs. Face detection is conducted to find images with faces. Apart from the 50 million full-set(LAION-Face 50M), we also provide a 20 million sub-set(LAION-Face 20M) for fast evaluation. 
 
 LAION-Face is first used as the training set of [FaRL](https://github.com/FacePerceiver/FaRL), which provides powerful pre-training transformer backbones for face analysis tasks.
