@@ -2,7 +2,7 @@
 
 LAION-Face is the human face subset of [LAION-400M](https://laion.ai/laion-400-open-dataset/), it consists of 50 million image-text pairs. Face detection is conducted to find images with faces. Apart from the 50 million full-set(LAION-Face 50M), we also provide a 20 million sub-set(LAION-Face 20M) for fast evaluation. 
 
-LAION-Face is first used as the training set of [FaRL](https://github.com/FacePerceiver/FaRL), which is a powerful pre-training transformer backbones for face analysis tasks.
+LAION-Face is first used as the training set of [FaRL](https://github.com/FacePerceiver/FaRL), which provides powerful pre-training transformer backbones for face analysis tasks.
 
 *For now, we only provide the image id list of those contains human face, you need download the images by yourself following the instructions below. We will further provide the face detection metadata.*
 
@@ -35,7 +35,7 @@ bash download.sh ./laion_face_meta ./laion_face_data
 Please be patient, this command might run over days, and cost about 2T disk space, and it will download 50 million image-text pairs as 32 parts.
 
 - To use the **LAION-Face 50M**, you should use all the 32 parts.
-- To use the **LAION-Face 20M**, you should use use these parts.
+- To use the **LAION-Face 20M**, you should use these parts.
     ```
     0,2,5,8,13,15,17,18,21,22,24,25,28
     ```
