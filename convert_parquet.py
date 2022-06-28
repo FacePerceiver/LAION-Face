@@ -20,7 +20,7 @@ if __name__=="__main__":
         samples=set(all_samples[split_num])
         sn=str(split_num).zfill(5)
         big_parquet_file=f"{laion_meta_dir}/part-{sn}-5b54c5d5-bbcf-484d-a2ce-0d6f73df1a36-c000.snappy.parquet"
-        big_table=pq.read_table(big_parquet_file).to_pandas()()
+        big_table=pq.read_table(big_parquet_file).to_pandas()
         big_table["has_face"]=big_table["SAMPLE_ID"].map(lambda x:x in samples)
         big_table=big_table[big_table["has_face"]]
         del big_table["has_face"]
